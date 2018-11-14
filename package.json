@@ -1,0 +1,22 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@storybook/addon-actions": "^4.0.6",
+    "@storybook/addon-links": "^4.0.6",
+    "@storybook/addons": "^4.0.6",
+    "@storybook/react": "^4.0.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "lerna": "^3.4.3"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
