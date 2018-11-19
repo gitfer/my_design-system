@@ -28,6 +28,7 @@
     "clean": "lerna clean",
     "run-script-prepublish": "lerna run prepublish",
     "publish": "lerna publish",
+    "publish-from-git": "lerna publish from-git",
     "component:create": "node ./scripts/create-component/index.js",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
