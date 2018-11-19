@@ -13,10 +13,13 @@
   },
   "dependencies": {
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "@mydesignsystem/link": "^0.0.4",
+    "@mydesignsystem/button": "^0.0.4"
   },
   "scripts": {
     "publish": "lerna publish",
+    "run-script-prepublish": "lerna run prepublish",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

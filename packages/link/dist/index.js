@@ -23,5 +23,5 @@ function Link(_ref) {
   return _react.default.createElement("a", _extends({
     className: className,
     href: "#"
-  }, props), "My link ", children);
+  }, props), "My link advanced ", children);
 }
