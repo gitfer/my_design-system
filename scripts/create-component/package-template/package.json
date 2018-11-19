@@ -1,0 +1,31 @@
+{
+  "name": "{{packageName}}",
+  "version": "0.0.1",
+  "description": "{{componentName}} UI Component for the J Sport Design System",
+  "main": "dist/index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "run-s build:js",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest",
+    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "dependencies": {{dependencies}},
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "jest": "^23.6.0",
+    "npm-run-all": "^4.1.3",
+    "@storybook/addon-actions": "^4.0.0",
+    "@storybook/addon-storyshots": "^4.0.0",
+    "@storybook/addons": "^4.0.0",
+    "@storybook/react": "^4.0.0"
+  }
+}

@@ -1,14 +1,20 @@
 {
   "name": "@mydesignsystem/root",
   "private": true,
+  "engines": {
+    "node": ">= 8.11.3",
+    "npm": ">= 5.6.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.6",
-    "@storybook/addon-actions": "^4.0.6",
-    "@storybook/addon-links": "^4.0.6",
-    "@storybook/addons": "^4.0.6",
-    "@storybook/react": "^4.0.6",
+    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/addon-links": "^4.0.7",
+    "@storybook/addons": "^4.0.7",
+    "@storybook/react": "^4.0.7",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
+    "copy-template-dir": "^1.4.0",
+    "inquirer": "^6.2.0",
     "lerna": "^3.4.3"
   },
   "dependencies": {
@@ -18,8 +24,11 @@
     "@mydesignsystem/button": "^0.0.4"
   },
   "scripts": {
-    "publish": "lerna publish",
+    "bootstrap": "lerna bootstrap --hoist",
+    "clean": "lerna clean",
     "run-script-prepublish": "lerna run prepublish",
+    "publish": "lerna publish",
+    "component:create": "node ./scripts/create-component/index.js",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
