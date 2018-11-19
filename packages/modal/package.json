@@ -1,0 +1,31 @@
+{
+  "name": "@jsport/lordgun-design-system-modal",
+  "version": "0.0.1",
+  "description": "Modal UI Component for the J Sport Design System",
+  "main": "dist/index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "run-s build:js",
+    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build:watch": "npm run build:js -- --watch",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest",
+    "test:updateSnapshot": "npm run test -- --updateSnapshot",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/addon-links": "^4.0.7",
+    "@storybook/addons": "^4.0.7",
+    "@storybook/react": "^4.0.7",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "jest": "^23.6.0",
+    "npm-run-all": "^4.1.3"
+  }
+}
