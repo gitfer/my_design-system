@@ -20,8 +20,8 @@
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "@mydesignsystem/link": "^0.0.4",
-    "@mydesignsystem/button": "^0.0.4"
+    "@mydesignsystem/link": "latest",
+    "@mydesignsystem/button": "latest"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
