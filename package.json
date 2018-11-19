@@ -11,7 +11,6 @@
     "@storybook/addon-links": "^4.0.7",
     "@storybook/addons": "^4.0.7",
     "@storybook/react": "^4.0.7",
-    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
     "copy-template-dir": "^1.4.0",
     "inquirer": "^6.2.0",
