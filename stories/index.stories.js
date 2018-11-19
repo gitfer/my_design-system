@@ -6,6 +6,7 @@ import { linkTo } from "@storybook/addon-links";
 
 import Button from "@mydesignsystem/button";
 import Link from "@mydesignsystem/link";
+import Modal from "@jsport/lordgun-design-system-modal";
 
 storiesOf("Button", module)
   .add("with text", () => (
@@ -20,3 +21,4 @@ storiesOf("Button", module)
   ));
 
 storiesOf("Link", module).add("with text", () => <Link>Hello Button</Link>);
+storiesOf("Modal", module).add("base", () => <Modal />);
