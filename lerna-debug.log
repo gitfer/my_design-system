@@ -1,17 +1,66 @@
-15 error Error: Command failed: git remote update
-15 error git@github.com: Permission denied (publickey).
-15 error fatal: Could not read from remote repository.
-15 error
-15 error Please make sure you have the correct access rights
-15 error and the repository exists.
-15 error error: Could not fetch origin
-15 error
-15 error Fetching origin
-15 error
-15 error     at makeError (C:\Users\Federico\Sviluppo\my_design-system\node_modules\@lerna\child-process\node_modules\execa\index.js:174:9)
-15 error     at Function.module.exports.sync (C:\Users\Federico\Sviluppo\my_design-system\node_modules\@lerna\child-process\node_modules\execa\index.js:338:15)
-15 error     at Object.execSync (C:\Users\Federico\Sviluppo\my_design-system\node_modules\@lerna\child-process\index.js:22:16)
-15 error     at updateRemote (C:\Users\Federico\Sviluppo\my_design-system\node_modules\@lerna\version\lib\is-behind-upstream.js:26:16)
-15 error     at isBehindUpstream (C:\Users\Federico\Sviluppo\my_design-system\node_modules\@lerna\version\lib\is-behind-upstream.js:11:3)
-15 error     at VersionCommand.initialize (C:\Users\Federico\Sviluppo\my_design-system\node_modules\@lerna\version\index.js:109:7)
-15 error     at Promise.resolve.then (C:\Users\Federico\Sviluppo\my_design-system\node_modules\@lerna\command\index.js:245:24)
+0 silly argv { _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.4.3',
+0 silly argv   '$0': 'node_modules\\lerna\\cli.js',
+0 silly argv   bump: 'from-git' }
+1 notice cli v3.4.3
+2 verbose rootPath C:\Users\Federico\Sviluppo\my_design-system
+3 info Verifying npm credentials
+4 http fetch GET 304 http://serverci:4873/-/whoami 200ms (from cache)
+5 silly npm whoami received {"username":"verdaccio"}
+6 verbose git-describe undefined => "v0.0.3-0-g20463b1"
+7 silly git-describe parsed => {"lastTagName":"v0.0.3","lastVersion":"v0.0.3","refCount":"0","sha":"20463b1","isDirty":false}
+8 silly getCurrentTags
+9 silly getTaggedPackages
+10 silly batched [ PackageGraphNode {
+10 silly batched     name: '@mydesignsystem/button',
+10 silly batched     externalDependencies: Map {},
+10 silly batched     localDependencies: Map {},
+10 silly batched     localDependents: Map {} },
+10 silly batched   PackageGraphNode {
+10 silly batched     name: '@mydesignsystem/link',
+10 silly batched     externalDependencies: Map {},
+10 silly batched     localDependencies: Map {},
+10 silly batched     localDependents: Map {} },
+10 silly batched   PackageGraphNode {
+10 silly batched     name: '@mydesignsystem/modal',
+10 silly batched     externalDependencies: Map {},
+10 silly batched     localDependencies: Map {},
+10 silly batched     localDependents: Map {} } ]
+11 info publish Publishing packages to npm...
+12 silly verifyNpmPackageAccess
+13 http fetch GET 404 http://serverci:4873/-/org/verdaccio/package?format=cli 7ms
+14 http fetch GET 404 http://serverci:4873/-/user/verdaccio/package?format=cli 5ms
+15 warn EREGISTRY Registry "http://serverci:4873" does not support `npm access ls-packages`, skipping permission checks...
+16 warn ENOLICENSE Packages @mydesignsystem/button, @mydesignsystem/link, @mydesignsystem/modal are missing a license
+17 silly getCurrentSHA
+18 verbose getCurrentSHA 20463b1e09e0e3cc66a0fdbe4cac120d6f392212
+19 silly getExecOpts C:\Users\Federico\Sviluppo\my_design-system undefined
+20 silly exec npm options { cwd: 'C:\\Users\\Federico\\Sviluppo\\my_design-system',
+20 silly exec   env: {},
+20 silly exec   stdio: [ 'ignore', 'pipe', 'inherit' ] }
+21 verbose pack [ '@mydesignsystem/button',
+21 verbose pack   '@mydesignsystem/link',
+21 verbose pack   '@mydesignsystem/modal' ]
+22 silly exec npm [ 'pack',
+22 silly exec   'C:\\Users\\Federico\\Sviluppo\\my_design-system\\packages\\button',
+22 silly exec   'C:\\Users\\Federico\\Sviluppo\\my_design-system\\packages\\link',
+22 silly exec   'C:\\Users\\Federico\\Sviluppo\\my_design-system\\packages\\modal' ]
+23 error Error: Command failed: npm pack C:\Users\Federico\Sviluppo\my_design-system\packages\button C:\Users\Federico\Sviluppo\my_design-system\packages\link C:\Users\Federico\Sviluppo\my_design-system\packages\modal
+23 error
+23 error > @mydesignsystem/link@0.0.3 prepublish C:/Users/Federico/Sviluppo/my_design-system/packages/link
+23 error > npm run build
+23 error
+23 error
+23 error > @mydesignsystem/link@0.0.3 build C:\Users\Federico\Sviluppo\my_design-system\packages\link
+23 error > run-s build:js build:css
+23 error
+23 error
+23 error > @mydesignsystem/link@0.0.3 build:js C:\Users\Federico\Sviluppo\my_design-system\packages\link
+23 error > babel src --out-dir dist --ignore spec.js --copy-files
+23 error
+23 error Successfully compiled 1 file with Babel.
+23 error
+23 error     at makeError (C:\Users\Federico\Sviluppo\my_design-system\node_modules\@lerna\child-process\node_modules\execa\index.js:174:9)
+23 error     at Promise.all.then.arr (C:\Users\Federico\Sviluppo\my_design-system\node_modules\@lerna\child-process\node_modules\execa\index.js:278:16)
+23 error     at <anonymous>
