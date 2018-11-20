@@ -1,6 +1,6 @@
 {
   "name": "@jsport/lordgun-design-system-modal",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Modal UI Component for the J Sport Design System",
   "main": "dist/index.js",
   "author": "",
