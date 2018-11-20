@@ -1,8 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## DEPLOY
+## Common usage
 
-- Edit files
+- `npm run component:create`
+
+- Edit files (usually create components)
+
+- `npm run storybook` and create stories
 
 - Local commits
 
