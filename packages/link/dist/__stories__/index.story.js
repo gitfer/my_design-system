@@ -8,6 +8,6 @@ var _2 = _interopRequireDefault(require(".."));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _react.storiesOf)("Modal", module).add("TODO", function (_) {
+(0, _react.storiesOf)('Link', module).add('TODO', function (_) {
   return _react2.default.createElement(_2.default, null);
 });

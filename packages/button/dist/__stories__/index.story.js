@@ -2,9 +2,9 @@
 
 var _react = require("@storybook/react");
 
-var _react2 = _interopRequireDefault(require("react"));
-
 var _addonActions = require("@storybook/addon-actions");
+
+var _react2 = _interopRequireDefault(require("react"));
 
 var _ = _interopRequireDefault(require(".."));
 

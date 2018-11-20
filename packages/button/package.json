@@ -1,13 +1,13 @@
 {
-  "name": "@mydesignsystem/button",
-  "version": "0.0.8",
-  "description": "",
+  "name": "@jsport/lordgun-design-system-button",
+  "version": "0.0.1",
+  "description": "Button UI Component for the J Sport Design System",
   "main": "dist/index.js",
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "build": "run-s build:js",
-    "build-storybook": "build-storybook",
     "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
-    "babel:version": "babel --version",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
@@ -15,19 +15,16 @@
     "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "gitHead": "20463b1e09e0e3cc66a0fdbe4cac120d6f392212",
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
+    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/addon-links": "^4.0.7",
+    "@storybook/addons": "^4.0.7",
+    "@storybook/react": "^4.0.7",
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.1.6",
-    "@storybook/addon-actions": "^4.0.0",
-    "@storybook/addon-storyshots": "^4.0.0",
-    "@storybook/addons": "^4.0.0",
-    "@storybook/react": "^4.0.0",
     "jest": "^23.6.0",
     "npm-run-all": "^4.1.3"
   }
