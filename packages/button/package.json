@@ -1,6 +1,6 @@
 {
   "name": "@jsport/lordgun-design-system-button",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Button UI Component for the J Sport Design System",
   "main": "dist/index.js",
   "author": "",
